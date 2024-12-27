@@ -1,6 +1,6 @@
 # AVClient
 
-AVClient is a lightweight application designed as a simplified replacement for Windows Explorer, providing quick access to essential tools and applications. With an intuitive full-screen interface, it is especially useful for kiosk setups, shared systems, or environments requiring a streamlined user experience.
+AVClient is a lightweight application designed as a simplified replacement for Windows Explorer, providing quick access to essential tools and applications. With an intuitive full-screen interface, it is especially useful for kiosk setups, or environments requiring a streamlined user experience.
 
 ## Features
 
@@ -39,7 +39,7 @@ The `buttons.json` file allows you to define categories and buttons:
 
 ## Use Cases
 
-- Kiosk or public systems requiring limited access.
+- Builded for a leightweight pc to run AV Related software
 - Environments prioritizing a clean, simple interface.
 - Replacement for standard file explorer with a focus on usability and customization.
 

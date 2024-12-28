@@ -1,4 +1,4 @@
-# AVClient - WIP, releasing Executable soon
+# AVClient - WIP
 
 AVClient is a lightweight application designed as a simplified replacement for Windows Explorer, providing quick access to essential tools and applications. With an intuitive full-screen interface, it is especially useful for leightweight embedded systems, or environments requiring a streamlined user experience.
 

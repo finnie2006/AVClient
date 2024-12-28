@@ -1,0 +1,41 @@
+name: Build AVClient
+
+# Trigger the workflow on push to main branch or on pull requests
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest  # Use a Windows runner
+    
+    steps:
+      # Step 1: Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up .NET SDK (latest stable version or specific version)
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '4.8'  # Specify the required .NET version for your app
+
+      # Step 3: Restore the dependencies using the .NET CLI
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # Step 4: Build the WinForms application
+      - name: Build AVClient
+        run: dotnet build --configuration Release
+
+      # Optional: Run tests (if you have any)
+      - name: Run tests
+        run: dotnet test --configuration Release
+
+      # Optional: Publish the application (if you want to create an executable)
+      - name: Publish WinForms application
+        run: dotnet publish --configuration Release --output ./publish

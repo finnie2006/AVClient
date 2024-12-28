@@ -1,6 +1,8 @@
 # AVClient - WIP, releasing Executable soon
 
-AVClient is a lightweight application designed as a simplified replacement for Windows Explorer, providing quick access to essential tools and applications. With an intuitive full-screen interface, it is especially useful for kiosk setups, or environments requiring a streamlined user experience.
+AVClient is a lightweight application designed as a simplified replacement for Windows Explorer, providing quick access to essential tools and applications. With an intuitive full-screen interface, it is especially useful for leightweight embedded systems, or environments requiring a streamlined user experience.
+
+I started developing it because i needed a pc for in my 19 inch rack to run some simple mixing software and other related (lightning) software
 
 
 ## Preview
